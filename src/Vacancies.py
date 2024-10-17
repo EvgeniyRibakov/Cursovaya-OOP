@@ -32,7 +32,7 @@ class Vacancy:
             title = item['name']
             salary_info = item.get('salary')
             if not salary_info or not item.get('snippet', {}).get('responsibility'):
-                continue  # пропускаем вакансии без зарплаты или описания
+                continue
             salary = salary_info.get('from', 0)
             description = item['snippet']['responsibility']
             url = item['alternate_url']

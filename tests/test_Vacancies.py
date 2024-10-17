@@ -1,6 +1,7 @@
 import unittest
 from src.Vacancies import Vacancy
 
+
 class TestVacancy(unittest.TestCase):
     def test_vacancy_initialization(self):
         vacancy = Vacancy("Test Title", 100000, "Test Description", "http://test.url")
@@ -56,6 +57,7 @@ class TestVacancy(unittest.TestCase):
             'url': "http://test.url"
         }
         self.assertEqual(vacancy.to_dict(), expected_dict)
+
 
 if __name__ == '__main__':
     unittest.main()

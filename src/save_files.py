@@ -1,6 +1,7 @@
 import json
 import os
 
+
 class JSONSaver:
     def __init__(self, filename="../data/vacancies.json"):
         self.__filename = filename
